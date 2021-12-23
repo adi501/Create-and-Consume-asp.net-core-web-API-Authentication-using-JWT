@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "84835197-4afa-49aa-b45e-65c30b598250",
+		"name": "JWT_With_DotNetCore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44376/api/Users/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkaSIsIm5iZiI6MTYzOTg0MTUzNCwiZXhwIjoxNjM5ODQ1MTM0LCJpYXQiOjE2Mzk4NDE1MzR9.uaADAEKB2_DMhEaxmpMzqRi_3P6Gxb85ODPmW_w1lT0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorized",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkaSIsIm5iZiI6MTYzOTg0MTUzNCwiZXhwIjoxNjM5ODQ1MTM0LCJpYXQiOjE2Mzk4NDE1MzR9.uaADAEKB2_DMhEaxmpMzqRi_3P6Gxb85ODPmW_w1lT0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44376/api/Users/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44376",
+					"path": [
+						"api",
+						"Users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44376/api/Users/authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"adi\",\r\n  \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44376/api/Users/authentication",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44376",
+					"path": [
+						"api",
+						"Users",
+						"authentication"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
